@@ -1,20 +1,24 @@
 # Implementation Phases: Broadcast Mind
 
-## Phase 0 — Repository archaeology and architecture freeze
+## Phase 0 — Architecture freeze (COMPLETE)
 
-**Status:** IN PROGRESS (this documentation)
+**Status:** COMPLETE — documentation review passed
 
-- Complete repository archaeology
-- Freeze architecture documents
-- Get user approval before implementation
+- Repository archaeology complete
+- Architecture frozen in docs/
+- Readiness review: 12/18 READY, 5 NEEDS DESIGN, 1 NEEDS RESEARCH, 1 MISSING (now created)
+- User authorized Phase 1
 
-## Phase 1 — World model and persistence
+## Phase 1 — World model and persistence (READY)
 
-- Define SQLite schema for world state
-- Implement entity, claim, evidence tables
-- Implement append-only correction mechanism
-- Basic CRUD for world state operations
+**Status:** READY — specification complete, awaiting authorization
+
+- SQLite schema for world state
+- WorldStore with append-only semantics
+- Story, Event, Claim, Evidence, Entity models
+- Correction mechanism (append-only)
 - World snapshot creation and comparison
+- Unit, integration, and epistemic tests
 
 ## Phase 2 — Source ingestion and story tracking
 
@@ -40,6 +44,7 @@
 - Persona memory store
 - Opinion tracking
 - Persona evolution (evidence-driven)
+- Persona runtime semantics
 
 ## Phase 5 — Editorial/newsroom system
 
@@ -55,8 +60,7 @@
 - Segment generation pipeline
 - Multiple segment types
 - Breaking story queuing (non-preemptive)
-- Idle content generation (retrospective,
-  analysis, explainer)
+- Idle content generation (retrospective, analysis, explainer)
 
 ## Phase 7 — Script generation
 
@@ -103,7 +107,14 @@
 - Persona disagreement display
 - Comparative analysis view
 
-## Phase 13 — Portable deployment
+## Phase 13 — Self-correction
+
+- Automated contradiction detection
+- Correction workflow
+- Correction broadcasts
+- Historical broadcast immutability
+
+## Phase 14 — Portable deployment
 
 - Configuration externalization
 - Environment variable support
@@ -125,7 +136,8 @@ The ordering follows dependency chains:
 9. Snapshots (audit/history)
 10. Personal knowledge (user context)
 11. Simulation (advanced persona use)
-12. Portability (deployment)
+12. Self-correction (requires world + personas + editorial)
+13. Portability (deployment)
 
 This ordering may change based on implementation
 discoveries during Phases 1–3.

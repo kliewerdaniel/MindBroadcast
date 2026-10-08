@@ -102,6 +102,24 @@ All documents in this index are PROPOSED unless marked otherwise.
 None represent implemented functionality — they represent the
 planning foundation for future implementation.
 
+New in second pass:
+- ARCHITECTURE_READINESS.md — Readiness assessment (12/18 READY)
+- MVP.md — Minimum viable architecture
+- plans/PHASE_1.md — First implementation phase specification
+- PERSISTENCE.md — Persistence model and schema
+- EPISTEMIC_INVARIANTS.md — 14 invariants with tests
+- STORY_LIFECYCLE.md — Story identity and continuity
+- EDITORIAL_MODEL.md — Editorial decision model
+- QUEUE_MODEL.md — Broadcast queue semantics
+- PERSONA_RUNTIME.md — Persona runtime semantics
+- SYNTHETIC_CONTENT.md — Synthetic content boundaries
+- UI_INFORMATION_ARCHITECTURE.md — UI information architecture for MVP
+- TESTING.md — Testing architecture
+- TECHNOLOGY_DECISIONS.md — Technology stack decisions
+- IMPLEMENTATION_BACKLOG.md — 20 ordered backlog items
+- LEGACY_SYSTEM.md — news08 capabilities and migration targets
+- NEXT_STEP.md — Phase 1 is the next step
+
 ## Related documents by topic
 
 ### What exists
